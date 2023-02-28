@@ -1,8 +1,7 @@
 class Student:
-    def __init__(self, name, surname, gender):
+    def __init__(self, name, surname):
         self.name = name
         self.surname = surname
-        self.gender = gender
         self.finished_courses = []
         self.courses_in_progress = []
         self.grades = {}
@@ -85,7 +84,7 @@ class Reviewer(Mentor):
             return 'Ошибка'
 
 
-some_student = Student('Алексей', 'Евсеев', 'м')
+some_student = Student('Алексей', 'Евсеев')
 
 student_list = [some_student]
 
